@@ -9,7 +9,6 @@ public abstract class Scene {
     public void inti(){
 
     }
-    
 
     public abstract void update(float dt);
 }
