@@ -1,6 +1,5 @@
 package Underworld;
 
-
 import org.lwjgl.BufferUtils;
 
 import java.nio.FloatBuffer;
@@ -19,7 +18,7 @@ public class LevelEditorScene extends Scene {
             "\n" +
             "out vec4 fColor;\n" +
             "\n" +
-            "void mian(){\n" +
+            "void main(){\n" +
             "    fColor = aColor;\n" +
             "    gl_Position = vec4(aPos,1.0);\n" +
             "}";
@@ -92,13 +91,13 @@ public class LevelEditorScene extends Scene {
             assert false : "";
         }
 
-        //link shaders and check for erros
+        //link shaders and check for errors
         shaderProgram = glCreateProgram();
         glAttachShader(shaderProgram, vertexID);
         glAttachShader(shaderProgram, fragmentID);
         glLinkProgram(shaderProgram);
 
-        //check for linking erros
+        //check for linking errors
         success = glGetProgrami(shaderProgram, GL_LINK_STATUS);
         if(success == GL_FALSE){
             int len = glGetProgrami(shaderProgram, GL_INFO_LOG_LENGTH);
@@ -120,7 +119,7 @@ public class LevelEditorScene extends Scene {
         glBindBuffer(GL_ARRAY_BUFFER, vboID);
         glBufferData(GL_ARRAY_BUFFER, vertexBuffer, GL_STATIC_DRAW);
 
-        //create the indices and up load
+        //create the indices and upload
         IntBuffer elementBuffer = BufferUtils.createIntBuffer(elementArray.length);
         elementBuffer.put(elementArray).flip();
 
