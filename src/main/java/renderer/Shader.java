@@ -44,7 +44,7 @@ public class Shader {
             if(secondPattern.equals("vertex")){
                 vertexSource = splitSting[1];
             }else if(secondPattern.equals("fragment")){
-                fragmentSource = splitSting[1];
+                fragmentSource = splitSting[2];
             }else{
                 throw new IOException("Unexpected token '" + firstPattern + "'");
             }
