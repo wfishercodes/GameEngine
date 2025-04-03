@@ -31,18 +31,18 @@ public class Shader {
             //Second pattern to find after #type 'pattern'
             index = source.indexOf("#type", eol) + 6;
             eol = source.indexOf("\r\n", index);
-            String secondPattern = source.substring(index,eol).trim();
+            String secondPattern = source.substring(index, eol).trim();
 
             if(firstPattern.equals("vertex")){
                 vertexSource = splitSting[1];
             }else if(firstPattern.equals("fragment")){
-                fragmentSource = splitSting[2];
+                fragmentSource = splitSting[1];
             }else{
                 throw new IOException("Unexpected token '" + firstPattern + "'");
             }
 
             if(secondPattern.equals("vertex")){
-                vertexSource = splitSting[1];
+                vertexSource = splitSting[2];
             }else if(secondPattern.equals("fragment")){
                 fragmentSource = splitSting[2];
             }else{
