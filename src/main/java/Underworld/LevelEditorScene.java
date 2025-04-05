@@ -21,7 +21,7 @@ public class LevelEditorScene extends Scene {
             "\n" +
             "void main(){\n" +
             "    fColor = aColor;\n" +
-            "    gl_Position = vec4(aPos,1.0);\n" +
+            "    gl_Position = vec4(aPos, 1.0);\n" +
             "}";
 
     private String fragmentShaderSrc = "#version 330 core\n" +
@@ -34,7 +34,7 @@ public class LevelEditorScene extends Scene {
             "    color = fColor;\n" +
             "}";
 
-    private int vertexID, fragmentID, shaderProgram;
+    //private int vertexID, fragmentID, shaderProgram;
 
     //sets the color for each vertex
     private float[] vertexArray = {

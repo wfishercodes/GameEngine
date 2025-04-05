@@ -46,7 +46,7 @@ public class Shader {
             }else if(secondPattern.equals("fragment")){
                 fragmentSource = splitSting[2];
             }else{
-                throw new IOException("Unexpected token '" + firstPattern + "'");
+                throw new IOException("Unexpected token '" + secondPattern + "'");
             }
         } catch (IOException e) {
             e.printStackTrace();
