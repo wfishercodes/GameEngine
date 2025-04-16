@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf3d88e9-e1c3-44bb-9ffe-bd3bea1c0ccd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/renderer/Texture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Underworld/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Underworld/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/FontRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/default.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/default.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/LevelEditorScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/LevelEditorScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +58,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build GameEngine.executor": "Run",
-    "Gradle.GameEngine [:Main.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Testing",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build GameEngine.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GameEngine [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Testing&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="GameEngine [:Main.main()]" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false" show_console_on_std_err="true" show_console_on_std_out="true">
       <ExternalSystemSettings>

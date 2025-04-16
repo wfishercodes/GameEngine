@@ -1,5 +1,7 @@
 package Underworld;
 
+import components.FontRenderer;
+import components.SpriteRenderer;
 import kotlin.random.Random;
 import org.joml.Vector2f;
 import org.lwjgl.BufferUtils;
@@ -22,10 +24,10 @@ public class LevelEditorScene extends Scene {
     //sets the color for each vertex
     private float[] vertexArray = {
             //position          //color
-            100f, 0f, 0.0f,     1.0f, 0.0f, 0.0f, 1.0f,      1,0,//bottom right  0
-            0f, 100f, 0.0f,     0.0f, 1.0f, 0.0f, 1.0f,      0,1,//top left      1
-            100f, 100f, 0.0f,   1.0f, 0.0f, 1.0f, 1.0f,      1,1,//top right     2
-            0f, 0f, 0.0f,       1.0f, 1.0f, 0.0f, 1.0f,      0,0//bottom left   3
+            100f, 0f, 0.0f,     1.0f, 0.0f, 0.0f, 1.0f,      1,1,//bottom right  0
+            0f, 100f, 0.0f,     0.0f, 1.0f, 0.0f, 1.0f,      0,0,//top left      1
+            100f, 100f, 0.0f,   1.0f, 0.0f, 1.0f, 1.0f,      1,0,//top right     2
+            0f, 0f, 0.0f,       1.0f, 1.0f, 0.0f, 1.0f,      0,1//bottom left    3
     };
     //IMPORTANT: Must be in counter-clockwise order
     //Sets the location for each triangle
@@ -38,6 +40,9 @@ public class LevelEditorScene extends Scene {
     private  Shader defaultShader;
     private Texture testTexture;
 
+    GameObject testObj;
+    private boolean firstTime = false;
+
 
     public LevelEditorScene(){
 
@@ -45,8 +50,13 @@ public class LevelEditorScene extends Scene {
 
     @Override
     public void init() {
+        System.out.println("Creating 'test object");
+        this.testObj = new GameObject("test object");
+        this.testObj.addComponent(new SpriteRenderer());
+        this.testObj.addComponent(new FontRenderer());
+        this.addGameObjectToScene(this.testObj);
 
-        this.camera = new Camera(new Vector2f());
+        this.camera = new Camera(new Vector2f(-200, -300));
         defaultShader = new Shader("assets/shaders/default.glsl");
         defaultShader.compile();
         this.testTexture = new Texture("assets/images/testImage.jpg");
@@ -119,6 +129,18 @@ public class LevelEditorScene extends Scene {
         glBindVertexArray(0);
 
         defaultShader.detach();
+
+        if(!firstTime) {
+            System.out.println("Creating Game object");
+            GameObject go = new GameObject("Game Test 2");
+            go.addComponent(new SpriteRenderer());
+            this.addGameObjectToScene(go);
+            firstTime = true;
+        }
+
+        for (GameObject go : this.gameObjects){
+            go.update(dt);
+        }
     }
 
 }
