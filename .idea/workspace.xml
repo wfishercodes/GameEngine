@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf3d88e9-e1c3-44bb-9ffe-bd3bea1c0ccd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Underworld/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Underworld/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/components/FontRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Underworld/Transform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/renderer/Renderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/LevelEditorScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/LevelEditorScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
