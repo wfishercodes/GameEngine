@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf3d88e9-e1c3-44bb-9ffe-bd3bea1c0ccd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Underworld/Transform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/renderer/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/testImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/testImage2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/AssetPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/default.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/default.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/LevelEditorScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/LevelEditorScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Underworld/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Underworld/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Shader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/Time.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,11 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\willf\IdeaProjects\GameEngine\Assets\Images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="GameEngine [:Main.main()]" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false" show_console_on_std_err="true" show_console_on_std_out="true">
       <ExternalSystemSettings>
